@@ -37,6 +37,20 @@ export const services = [
     icon: "Database"
   },
   {
+    id: "software-development",
+    title: "Software Development",
+    shortDesc: "Custom solutions built for your business",
+    description: "Bespoke software solutions, integrations, and automation tools designed to streamline your operations and drive efficiency.",
+    features: [
+      "Custom application development",
+      "System integrations and APIs",
+      "Business process automation",
+      "Legacy system modernisation",
+      "Technical documentation and handover"
+    ],
+    icon: "Code"
+  },
+  {
     id: "web-development",
     title: "Web Development",
     shortDesc: "Modern, responsive business websites",
