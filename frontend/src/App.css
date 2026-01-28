@@ -646,17 +646,20 @@ body {
 .value-list li {
   display: flex;
   gap: 24px;
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   padding: 24px;
-  background: var(--bg-primary);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
   border-radius: 16px;
-  border: 1px solid var(--border-subtle);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
 }
 
 .value-list li:hover {
-  border-color: var(--brand-primary);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.04);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  transform: translateX(4px);
 }
 
 .value-bullet {
