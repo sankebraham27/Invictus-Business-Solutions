@@ -29,9 +29,18 @@
   --brand-light: rgba(13, 148, 136, 0.1);
   --brand-lighter: rgba(13, 148, 136, 0.05);
   
-  /* Accent */
-  --accent-warm: #F59E0B;
-  --accent-cool: #6366F1;
+  /* Secondary Accent - Warm Amber */
+  --accent-warm: #D97706;
+  --accent-warm-light: rgba(217, 119, 6, 0.1);
+  
+  /* Tertiary - Indigo */
+  --accent-indigo: #4F46E5;
+  --accent-indigo-light: rgba(79, 70, 229, 0.08);
+  
+  /* Soft colored backgrounds */
+  --bg-teal-soft: rgba(13, 148, 136, 0.04);
+  --bg-amber-soft: rgba(217, 119, 6, 0.04);
+  --bg-indigo-soft: rgba(79, 70, 229, 0.04);
 }
 
 * {
