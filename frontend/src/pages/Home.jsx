@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Monitor, Database, Globe, Headphones, ChevronRight, Shield, Zap, Users } from 'lucide-react';
+import { ArrowRight, Monitor, Database, Globe, Headphones, ChevronRight, Shield, Zap, Users, Code } from 'lucide-react';
 import { services, stats, siteConfig } from '../data/mock';
 
 const iconMap = {
   Monitor: Monitor,
   Database: Database,
   Globe: Globe,
-  Headphones: Headphones
+  Headphones: Headphones,
+  Code: Code
 };
 
 export default function Home() {
