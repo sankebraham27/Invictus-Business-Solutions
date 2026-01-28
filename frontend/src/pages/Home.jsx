@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Monitor, Database, Globe, Headphones, ChevronRight } from 'lucide-react';
-import Spline from '@splinetool/react-spline';
+import { ArrowRight, Monitor, Database, Globe, Headphones, ChevronRight, Shield, Zap, Users } from 'lucide-react';
 import { services, stats, siteConfig } from '../data/mock';
 
 const iconMap = {
@@ -30,7 +29,7 @@ export default function Home() {
             <div className="hero-cta-group">
               <Link to="/contact" className="btn-primary">
                 Request a Consultation
-                <ArrowRight size={20} />
+                <ArrowRight size={18} />
               </Link>
               <Link to="/services" className="btn-secondary">
                 Explore Services
@@ -38,7 +37,26 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-visual">
-            <Spline scene="https://prod.spline.design/NbVmy6DPLhY-5Lvg/scene.splinecode" />
+            <div className="hero-illustration">
+              <div className="illustration-grid">
+                <div className="illustration-card">
+                  <Shield size={28} />
+                  <span>Trusted Partner</span>
+                </div>
+                <div className="illustration-card">
+                  <Zap size={28} />
+                  <span>Fast Solutions</span>
+                </div>
+                <div className="illustration-card">
+                  <Users size={28} />
+                  <span>Direct Support</span>
+                </div>
+                <div className="illustration-card accent">
+                  <Monitor size={28} />
+                  <span>IT Excellence</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -69,7 +87,7 @@ export default function Home() {
             return (
               <div key={service.id} className="service-card">
                 <div className="service-icon">
-                  <IconComponent size={32} />
+                  <IconComponent size={24} />
                 </div>
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-desc">{service.shortDesc}</p>
@@ -85,39 +103,37 @@ export default function Home() {
       {/* Value Proposition */}
       <section className="value-section">
         <div className="value-content">
-          <div className="value-text">
-            <h2 className="value-title">Why Work With an Independent Consultant?</h2>
-            <ul className="value-list">
-              <li>
-                <span className="value-bullet"></span>
-                <div>
-                  <strong>Objective Advice</strong>
-                  <p>No vendor allegiances or corporate agendas — just honest recommendations.</p>
-                </div>
-              </li>
-              <li>
-                <span className="value-bullet"></span>
-                <div>
-                  <strong>Direct Communication</strong>
-                  <p>Work directly with your consultant, not through layers of management.</p>
-                </div>
-              </li>
-              <li>
-                <span className="value-bullet"></span>
-                <div>
-                  <strong>Flexible Engagement</strong>
-                  <p>Tailored arrangements that fit your timeline and budget.</p>
-                </div>
-              </li>
-              <li>
-                <span className="value-bullet"></span>
-                <div>
-                  <strong>Real-World Experience</strong>
-                  <p>Practical insights from hands-on enterprise system support.</p>
-                </div>
-              </li>
-            </ul>
-          </div>
+          <h2 className="value-title">Why Work With an Independent Consultant?</h2>
+          <ul className="value-list">
+            <li>
+              <span className="value-bullet"></span>
+              <div>
+                <strong>Objective Advice</strong>
+                <p>No vendor allegiances or corporate agendas — just honest recommendations.</p>
+              </div>
+            </li>
+            <li>
+              <span className="value-bullet"></span>
+              <div>
+                <strong>Direct Communication</strong>
+                <p>Work directly with your consultant, not through layers of management.</p>
+              </div>
+            </li>
+            <li>
+              <span className="value-bullet"></span>
+              <div>
+                <strong>Flexible Engagement</strong>
+                <p>Tailored arrangements that fit your timeline and budget.</p>
+              </div>
+            </li>
+            <li>
+              <span className="value-bullet"></span>
+              <div>
+                <strong>Real-World Experience</strong>
+                <p>Practical insights from hands-on enterprise system support.</p>
+              </div>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -131,7 +147,7 @@ export default function Home() {
           </p>
           <Link to="/contact" className="btn-primary cta-btn">
             Get in Touch
-            <ArrowRight size={20} />
+            <ArrowRight size={18} />
           </Link>
         </div>
       </section>
