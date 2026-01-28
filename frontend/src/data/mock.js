@@ -1,8 +1,8 @@
 export const siteConfig = {
   businessName: "Invictus Business Solutions",
   tagline: "Independent IT Consulting & Web Development",
-  email: "contact@invictusbusiness.com.au",
-  phone: "+61 400 000 000",
+  email: "contact@invictusbiz.com.au",
+  domain: "invictusbiz.com.au",
   location: "Australia",
   abn: "00 000 000 000"
 };
