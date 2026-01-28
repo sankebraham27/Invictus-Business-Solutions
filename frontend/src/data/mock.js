@@ -67,7 +67,7 @@ export const services = [
 ];
 
 export const stats = [
-  { value: "10+", label: "Years Experience" },
+  { value: "20+", label: "Years Experience" },
   { value: "50+", label: "Projects Delivered" },
   { value: "100%", label: "Independent" },
   { value: "AU", label: "Based" }
