@@ -386,7 +386,7 @@ body {
    ============================================ */
 
 .stats-section {
-  background: linear-gradient(135deg, var(--bg-dark) 0%, var(--bg-dark-secondary) 100%);
+  background: linear-gradient(135deg, var(--bg-dark) 0%, #0C4A6E 100%);
   padding: 70px 7.6923%;
   position: relative;
   overflow: hidden;
@@ -402,6 +402,17 @@ body {
   background-image: 
     radial-gradient(circle at 1px 1px, rgba(255,255,255,0.03) 1px, transparent 0);
   background-size: 32px 32px;
+  pointer-events: none;
+}
+
+.stats-section::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(13, 148, 136, 0.2) 0%, transparent 70%);
   pointer-events: none;
 }
 
