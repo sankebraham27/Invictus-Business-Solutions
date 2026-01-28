@@ -250,11 +250,69 @@ body {
   height: 480px;
   position: relative;
   overflow: visible;
-  background: var(--bg-tertiary);
-  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.hero-illustration {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 420px;
+}
+
+.illustration-card {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+  color: var(--text-secondary);
+}
+
+.illustration-card:hover {
+  border-color: var(--brand-primary);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.illustration-card svg {
+  color: var(--brand-primary);
+}
+
+.illustration-card span {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.illustration-card.accent {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+.illustration-card.accent svg {
+  color: #FFFFFF;
+}
+
+.illustration-card.accent span {
+  color: #FFFFFF;
 }
 
 /* ============================================
