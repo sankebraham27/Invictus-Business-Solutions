@@ -747,8 +747,9 @@ body {
   padding: 160px 7.6923% 100px;
   text-align: center;
   background: 
-    radial-gradient(ellipse at 50% 0%, rgba(13, 148, 136, 0.08) 0%, transparent 60%),
-    linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+    radial-gradient(ellipse at 30% 0%, rgba(13, 148, 136, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 100%, rgba(79, 70, 229, 0.08) 0%, transparent 50%),
+    linear-gradient(180deg, #F0FDFA 0%, var(--bg-primary) 100%);
   position: relative;
 }
 
