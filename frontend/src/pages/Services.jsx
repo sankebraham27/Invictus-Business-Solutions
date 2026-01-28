@@ -1,13 +1,14 @@
 import React, { useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { ArrowRight, Monitor, Database, Globe, Headphones, Check } from 'lucide-react';
+import { ArrowRight, Monitor, Database, Globe, Headphones, Check, Code } from 'lucide-react';
 import { services } from '../data/mock';
 
 const iconMap = {
   Monitor: Monitor,
   Database: Database,
   Globe: Globe,
-  Headphones: Headphones
+  Headphones: Headphones,
+  Code: Code
 };
 
 export default function Services() {
