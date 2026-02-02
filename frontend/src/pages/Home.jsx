@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Monitor, Database, Globe, Headphones, ChevronRight, Shield, Zap, Users, Code } from 'lucide-react';
-import { services, stats, siteConfig } from '../data/mock';
+import { ArrowRight, Monitor, Database, Globe, Headphones, ChevronRight, Shield, Zap, Users, Code, TrendingUp } from 'lucide-react';
+import { services, stats } from '../data/mock';
 
 const iconMap = {
   Monitor: Monitor,
@@ -16,16 +16,25 @@ export default function Home() {
     <main className="home-page">
       {/* Hero Section */}
       <section className="hero-section">
+        {/* Floating Orbs */}
+        <div className="orb-1"></div>
+        <div className="orb-2"></div>
+        <div className="orb-3"></div>
+        
         <div className="hero-content">
           <div className="hero-text">
+            <div className="hero-badge">
+              <span className="hero-badge-dot"></span>
+              Independent IT Consultant
+            </div>
             <h1 className="hero-title">
-              Independent IT Consulting<br />
-              <span className="hero-highlight">for Growing Businesses</span>
+              Technology Solutions<br />
+              <span className="hero-highlight">That Drive Results</span>
             </h1>
             <p className="hero-description">
-              Practical, results-driven technology solutions from an experienced 
-              independent consultant. No hype, no buzzwords — just reliable IT 
-              guidance tailored to your business needs.
+              20+ years of hands-on experience delivering practical IT consulting, 
+              software development, and enterprise solutions for Australian businesses. 
+              No corporate overhead — just direct, expert guidance.
             </p>
             <div className="hero-cta-group">
               <Link to="/contact" className="btn-primary">
@@ -37,25 +46,36 @@ export default function Home() {
               </Link>
             </div>
           </div>
+          
           <div className="hero-visual">
-            <div className="hero-illustration">
-              <div className="illustration-grid">
-                <div className="illustration-card">
-                  <Shield size={28} />
-                  <span>Trusted Partner</span>
+            <div className="bento-grid">
+              <div className="bento-card">
+                <div className="bento-icon">
+                  <Shield size={24} />
                 </div>
-                <div className="illustration-card">
-                  <Zap size={28} />
-                  <span>Fast Solutions</span>
+                <h3 className="bento-title">Trusted Partner</h3>
+                <p className="bento-desc">Independent advice aligned with your goals</p>
+              </div>
+              <div className="bento-card">
+                <div className="bento-icon">
+                  <Zap size={24} />
                 </div>
-                <div className="illustration-card">
-                  <Users size={28} />
-                  <span>Direct Support</span>
+                <h3 className="bento-title">Fast Delivery</h3>
+                <p className="bento-desc">Efficient solutions without bureaucracy</p>
+              </div>
+              <div className="bento-card">
+                <div className="bento-icon">
+                  <TrendingUp size={24} />
                 </div>
-                <div className="illustration-card accent">
-                  <Monitor size={28} />
-                  <span>IT Excellence</span>
+                <h3 className="bento-title">Proven Results</h3>
+                <p className="bento-desc">Track record of successful projects</p>
+              </div>
+              <div className="bento-card featured">
+                <div className="bento-icon">
+                  <Users size={24} />
                 </div>
+                <div className="bento-stat">20+</div>
+                <h3 className="bento-title">Years Experience</h3>
               </div>
             </div>
           </div>
@@ -77,9 +97,11 @@ export default function Home() {
       {/* Services Overview */}
       <section className="services-overview">
         <div className="section-header">
-          <h2 className="section-title">Services</h2>
+          <span className="section-label">What We Offer</span>
+          <h2 className="section-title">Comprehensive IT Services</h2>
           <p className="section-subtitle">
-            Comprehensive IT solutions delivered with hands-on expertise
+            From strategic consulting to hands-on development, we deliver solutions 
+            that make a real difference to your business operations.
           </p>
         </div>
         <div className="services-grid">
@@ -88,7 +110,7 @@ export default function Home() {
             return (
               <div key={service.id} className="service-card">
                 <div className="service-icon">
-                  <IconComponent size={24} />
+                  <IconComponent size={26} />
                 </div>
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-desc">{service.shortDesc}</p>
@@ -104,34 +126,34 @@ export default function Home() {
       {/* Value Proposition */}
       <section className="value-section">
         <div className="value-content">
-          <h2 className="value-title">Why Work With an Independent Consultant?</h2>
+          <h2 className="value-title">Why Choose an Independent Consultant?</h2>
           <ul className="value-list">
             <li>
               <span className="value-bullet"></span>
               <div>
                 <strong>Objective Advice</strong>
-                <p>No vendor allegiances or corporate agendas — just honest recommendations.</p>
+                <p>No vendor allegiances or corporate agendas — just honest recommendations that serve your business interests.</p>
               </div>
             </li>
             <li>
               <span className="value-bullet"></span>
               <div>
                 <strong>Direct Communication</strong>
-                <p>Work directly with your consultant, not through layers of management.</p>
+                <p>Work directly with your consultant throughout the engagement. No account managers or middlemen.</p>
               </div>
             </li>
             <li>
               <span className="value-bullet"></span>
               <div>
                 <strong>Flexible Engagement</strong>
-                <p>Tailored arrangements that fit your timeline and budget.</p>
+                <p>Tailored arrangements that fit your timeline, budget, and specific requirements.</p>
               </div>
             </li>
             <li>
               <span className="value-bullet"></span>
               <div>
-                <strong>Real-World Experience</strong>
-                <p>Practical insights from hands-on enterprise system support.</p>
+                <strong>Enterprise Experience</strong>
+                <p>Two decades of hands-on experience with business systems, ERP platforms, and enterprise IT.</p>
               </div>
             </li>
           </ul>
@@ -141,13 +163,13 @@ export default function Home() {
       {/* CTA Section */}
       <section className="cta-section">
         <div className="cta-content">
-          <h2 className="cta-title">Ready to Discuss Your IT Needs?</h2>
+          <h2 className="cta-title">Ready to Transform Your IT?</h2>
           <p className="cta-description">
-            Get independent, practical IT advice for your business. 
-            No obligation, no pressure.
+            Let's discuss how independent IT consulting can help your business 
+            achieve its technology goals. No obligation, no pressure.
           </p>
           <Link to="/contact" className="btn-primary cta-btn">
-            Get in Touch
+            Start a Conversation
             <ArrowRight size={18} />
           </Link>
         </div>
